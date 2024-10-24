@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/styles.css">
+    <title>Configurações</title>
+</head>
+<body>
+    <div class="header">
+        <button onclick="openMenu()">☰ Menu</button>
+        <h1>Configurações</h1>
+        <div id="menu" class="menu">
+            <button onclick="goToPage('mainPage')">Página Principal</button>
+            <button onclick="goToPage('stockManagement')">Gerenciamento de Estoque</button>
+        </div>
+    </div>
+
+    <div class="settings-container">
+        <h2>Quantidade mínima de itens</h2>
+        <ul id="settingsList"></ul>
+    </div>
+
+    <script src="/src/controllers/stockController.js"></script>
+</body>
+</html>
